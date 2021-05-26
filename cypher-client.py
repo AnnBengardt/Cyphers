@@ -71,13 +71,13 @@ while True:
     print("B:".encode() + str(B).encode())
     print("signB".encode() + signB)
 
-    # роверка значений
+    # Проверка значений
     hashB = hashlib.sha256(B).digest()
     checkHash = RSAkey2.decrypt(signB)
     print("hashB:".encode() + hashB)
     print("CheckHashB:".encode() + checkHash)
 
-    if hashB == checkHash: #проверки правильности
+    if hashB == checkHash:
         print("Проверка пройдена успешно!".encode())
 
         # Так сервер отправил правильное секретное значение, можно сгенерировать ключ сессии
