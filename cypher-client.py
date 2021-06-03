@@ -6,7 +6,7 @@ from Crypto.Cipher import AES
 from Crypto.PublicKey import RSA
 import hashlib
 
-# подключаемся к серверу
+
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 while True:
