@@ -4,7 +4,6 @@ from Crypto.Cipher import AES
 from Crypto.PublicKey import RSA
 import hashlib
 
-# В начале программы создаётся сокет и развёртывается сервер путём привязывания локального хоста к сокету
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
