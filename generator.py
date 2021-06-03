@@ -2,7 +2,7 @@ import socket
 from Crypto import Random
 from Crypto.PublicKey import RSA
 
-# Данный файл используем для генерации ключей сессий
+# Данный файл используется для генерации ключей сессий
 
 # генерируес последовательность
 rng1 = Random.new().read
